@@ -66,7 +66,7 @@ You will need to provide the following or contact me:
 * API keys have been [hidden from source control](https://medium.com/code-better/hiding-api-keys-from-your-android-repository-b23f5598b906)
 * [Get your Mapbox API key](https://www.mapbox.com/)
 * google-services.json
-* Jitpack
+* [Jitpack](https://jitpack.io/)
 
 ## Offline capable
 Offline capability is provided by [Firebase](https://firebase.google.com/docs/firestore)
