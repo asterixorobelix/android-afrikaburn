@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/offline_map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapFragment">
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/location_picker_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/location_reject"
+                android:layout_width="@dimen/map_medium_icon"
+                android:layout_height="@dimen/map_medium_icon"
+                android:layout_marginStart="@dimen/map_medium_margin"
+                android:tint="@color/offline_map_location_picker_overlay_colour"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_reject" />
+
+            <TextView
+                android:id="@+id/explanatory_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/offline_map_explanatory_text"
+                android:textColor="@color/offline_map_location_picker_overlay_colour"
+                android:textSize="@dimen/map_medium_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/map_flag"
+                android:layout_width="@dimen/map_medium_icon"
+                android:layout_height="@dimen/map_medium_icon"
+                android:elevation="@dimen/map_small_margin"
+                android:tint="@color/offline_map_location_picker_overlay_colour"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_flag" />
+
+            <ImageView
+                android:id="@+id/location_accept"
+                android:layout_width="@dimen/map_medium_icon"
+                android:layout_height="@dimen/map_medium_icon"
+                android:layout_marginEnd="@dimen/map_medium_margin"
+                android:tint="@color/offline_map_location_picker_overlay_colour"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_accept" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/location_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/map_horizontal_margin"
+            app:backgroundTint="@color/offline_map_location_fab_colour"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_location" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/location_picker_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/map_horizontal_margin"
+            android:paddingBottom="@dimen/map_horizontal_margin"
+            app:backgroundTint="@color/offline_map_location_fab_colour"
+            app:layout_constraintBottom_toTopOf="@id/location_fab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_camp" />
+
+        <include
+            android:id="@+id/lottie_view"
+            layout="@layout/layout_busy_indicator"></include>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/menu_map" />
+        <item
+            android:id="@+id/nav_projects"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_projects" />
+
+        <item
+            android:id="@+id/locationFragment"
+            android:icon="@drawable/ic_camp"
+            android:title="@string/menu_location" />
+
+        <item
+            android:id="@+id/eventFragment"
+            android:icon="@drawable/ic_fire"
+            android:title="@string/menu_event" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_question"
+            android:title="@string/menu_about" />
+    </group>
+</menu>

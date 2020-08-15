@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/project_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/medium_dimen"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        tools:context="asterixorobelix.afrikaburn.event.EventFragment">
+
+        <asterixorobelix.utilities.ui.widgets.InkPageIndicator
+            android:id="@+id/page_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_dimen" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/event_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+</layout>
