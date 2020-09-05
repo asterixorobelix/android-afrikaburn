@@ -1,7 +1,8 @@
 package asterixorobelix.afrikaburn.projects
 
-import asterixorobelix.afrikaburn.models.ProjectTypes
+import io.asterixorobelix.databasemodels.ProjectTypes
 import asterixorobelix.afrikaburn.repository.DataProvider
+import io.asterixorobelix.databasemodels.TabProjectable
 
 class ProjectTabRepository(private val dataProvider: DataProvider) {
 

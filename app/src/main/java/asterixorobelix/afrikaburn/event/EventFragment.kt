@@ -3,7 +3,6 @@ package asterixorobelix.afrikaburn.event
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import asterixorobelix.afrikaburn.R
 import asterixorobelix.afrikaburn.databinding.EventFragmentBinding
-import asterixorobelix.afrikaburn.models.ProjectTypes
 import asterixorobelix.utilities.base.BaseViewPagerFragment
 import asterixorobelix.utilities.ui.obtainStringFromResourceId
 import com.google.android.material.tabs.TabLayoutMediator

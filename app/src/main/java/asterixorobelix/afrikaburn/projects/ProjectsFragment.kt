@@ -1,13 +1,10 @@
 package asterixorobelix.afrikaburn.projects
 
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import androidx.viewpager2.widget.ViewPager2
 import asterixorobelix.afrikaburn.R
 import asterixorobelix.afrikaburn.databinding.FragmentProjectsBinding
-import asterixorobelix.afrikaburn.models.ProjectTypes
+import io.asterixorobelix.databasemodels.ProjectTypes
 import asterixorobelix.utilities.base.BaseViewPagerFragment
-import asterixorobelix.utilities.listeners.HideImageNestedScrollListener
-import asterixorobelix.utilities.ui.loadImageFromIDSetVisibility
 import asterixorobelix.utilities.ui.obtainStringFromResourceId
 import asterixorobelix.utilities.ui.toggleMainActivityBottomNavBar
 import com.google.android.material.tabs.TabLayoutMediator

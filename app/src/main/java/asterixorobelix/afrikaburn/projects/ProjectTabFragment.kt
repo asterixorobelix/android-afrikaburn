@@ -7,7 +7,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ConcatAdapter
 import asterixorobelix.afrikaburn.R
 import asterixorobelix.afrikaburn.databinding.ProjectTabFragmentBinding
-import asterixorobelix.afrikaburn.models.ProjectTypes
+import io.asterixorobelix.databasemodels.ProjectTypes
 import asterixorobelix.afrikaburn.projects.detail.DetailNavArgument
 import asterixorobelix.afrikaburn.projects.detail.ProjectDetailFragment
 import asterixorobelix.utilities.base.BaseViewModelFragment

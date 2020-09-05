@@ -1,6 +1,6 @@
-package asterixorobelix.afrikaburn.projects
+package io.asterixorobelix.databasemodels
 
-import asterixorobelix.afrikaburn.models.DatabaseProjectable
+import io.asterixorobelix.databasemodels.DatabaseProjectable
 
 interface TabProjectable : DatabaseProjectable {
     var title: String?

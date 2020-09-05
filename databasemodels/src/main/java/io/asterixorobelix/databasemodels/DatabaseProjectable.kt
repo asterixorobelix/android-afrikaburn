@@ -1,4 +1,4 @@
-package asterixorobelix.afrikaburn.models
+package io.asterixorobelix.databasemodels
 
 interface DatabaseProjectable {
     var nid: String?

@@ -4,8 +4,9 @@ import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import asterixorobelix.afrikaburn.R
-import asterixorobelix.afrikaburn.models.ProjectTypes
+import io.asterixorobelix.databasemodels.ProjectTypes
 import asterixorobelix.utilities.base.BaseBusyIndicatorViewModel
+import io.asterixorobelix.databasemodels.TabProjectable
 
 class ProjectTabViewModel(
     private val projectTabRepository: ProjectTabRepository,

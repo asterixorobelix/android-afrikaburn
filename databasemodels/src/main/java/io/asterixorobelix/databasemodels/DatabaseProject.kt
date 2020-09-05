@@ -1,4 +1,4 @@
-package asterixorobelix.afrikaburn.models
+package io.asterixorobelix.databasemodels
 
 class DatabaseProject : DatabaseProjectable {
     override var nid: String? = ""

@@ -1,6 +1,6 @@
 package asterixorobelix.afrikaburn.map
 
-import asterixorobelix.afrikaburn.models.ProjectTypes
+import io.asterixorobelix.databasemodels.ProjectTypes
 import asterixorobelix.afrikaburn.repository.DataProvider
 import asterixorobelix.offlinemap.MarkerLocation
 import asterixorobelix.offlinemap.OfflineMapDataProvider

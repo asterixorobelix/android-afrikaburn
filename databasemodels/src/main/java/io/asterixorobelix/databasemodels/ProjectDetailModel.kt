@@ -1,6 +1,4 @@
-package asterixorobelix.afrikaburn.projects.detail
-
-import asterixorobelix.afrikaburn.projects.TabProject
+package io.asterixorobelix.databasemodels
 
 class ProjectDetailModel : TabProject(), ProjectDetailable {
     override var fieldPrjWtfWebsite: String? = ""

@@ -1,6 +1,5 @@
-package asterixorobelix.afrikaburn.projects
+package io.asterixorobelix.databasemodels
 
-import asterixorobelix.afrikaburn.Constants.Companion.AFRIKABURN_BASE_URL
 
 open class TabProject : TabProjectable {
     override var nid: String? = ""
@@ -22,4 +21,8 @@ open class TabProject : TabProjectable {
     override var fieldPrjSndLevel: String? = ""
 
     override fun getImageUrl(): String = AFRIKABURN_BASE_URL + fieldPrjWtfImage
+
+    companion object{
+        const val AFRIKABURN_BASE_URL = "https://tribe.afrikaburn.com"
+    }
 }

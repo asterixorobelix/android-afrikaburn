@@ -1,6 +1,4 @@
-package asterixorobelix.afrikaburn.map
-
-import asterixorobelix.afrikaburn.models.DatabaseProjectable
+package io.asterixorobelix.databasemodels
 
 interface MapProjectable : DatabaseProjectable {
     var fieldPrjAdmLatitude: String?

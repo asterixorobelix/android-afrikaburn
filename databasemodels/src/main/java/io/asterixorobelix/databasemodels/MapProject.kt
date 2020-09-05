@@ -1,4 +1,4 @@
-package asterixorobelix.afrikaburn.map
+package io.asterixorobelix.databasemodels
 
 class MapProject : MapProjectable {
     override var nid: String? = ""

@@ -3,7 +3,7 @@ package asterixorobelix.afrikaburn.projects
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import asterixorobelix.afrikaburn.models.ProjectTypes
+import io.asterixorobelix.databasemodels.ProjectTypes
 import asterixorobelix.utilities.ui.newInstance
 
 class ProjectsAdapter(projectsFragment: ProjectsFragment) : FragmentStateAdapter(projectsFragment) {

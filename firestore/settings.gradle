@@ -1,0 +1,4 @@
+rootProject.name = 'firestore'
+include 'databasemodels'
+project(":databasemodels").projectDir = new File("/Users/nathanstasin/Documents/Personal/github/android-afrikaburn/databasemodels")
+
