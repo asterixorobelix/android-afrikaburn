@@ -1,4 +1,5 @@
 rootProject.name = 'firestore'
 include 'databasemodels'
+//https://stackoverflow.com/questions/24975745/gradle-dependencies-compile-project-by-relative-path
 project(":databasemodels").projectDir = new File("/Users/nathanstasin/Documents/Personal/github/android-afrikaburn/databasemodels")
 

@@ -15,7 +15,7 @@ fun main() {
 }
 
 fun getProjectsFromJson(){
-    val json = File("/Users/nathanstasin/Documents/Personal/firebase-database-util/projects.json").readText()
+    val json = File("projects.json").readText()
     val deserializedJson = Gson().fromJson(json, AfrikaburnProjects::class.java)
     println("${deserializedJson.projects.size} projects received")
 
@@ -35,7 +35,7 @@ fun getProjectsFromJson(){
 private fun setupFirebaseFirestore(): Firestore {
  //Use a service account with datastore.write privileges in order to insert into the afrikaburn Firestore
     val serviceAccount =
-        FileInputStream("/Users/nathanstasin/Documents/Personal/firebase-database-util/afrikaburnkotlin-59456bd598bb.json")
+        FileInputStream("afrikaburnkotlin-59456bd598bb.json")
     val credentials = GoogleCredentials.fromStream(serviceAccount);
     val options = FirebaseOptions.Builder()
         .setCredentials(credentials)
